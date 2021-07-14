@@ -1,0 +1,51 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <h1 id="title">Text Analysis</h1>
+
+        <form action ='define' method = "post">
+            <h3>Enter the text</h3>
+            <input type='text' name='ip-word' placeholder = 'enter text' required = 'required'/>
+            
+        <h3>Select an entity from the drop down</h3>
+          
+          <select name='ip2'>
+            <option value="Verbs">Verbs</option>
+            <option value="NER">NER</option>
+            <option value="Root Form">Root Form</option>
+            </select>
+            
+        <br>
+        </label>
+        <br>
+        <br>
+        <button type='submit'> Submit </button>
+        <br>
+        <br>
+        {{ translated_text }}
+        </form>
+    </body>
+</html>
+
+<style>
+     h1 {
+    margin-top: 50px;
+    text-align: center;
+    font: "Lucida Console", "Courier New", monospace;
+
+  }
+  form{
+      text-align: center;
+     
+    }
+  body{
+      text-align: center;
+      background-color:rgb(241, 243, 243);
+      margin-left: 80 px;
+      margin-right: 80 px;
+      font-family: Arial;
+  }
+</style>
